@@ -10,8 +10,9 @@ class TaskUpdateForm(forms.ModelForm):
         widget=forms.CheckboxSelectMultiple,
         required=False
     )
-    deadline = forms.DateField(widget=SelectDateWidget(
-        empty_label=("year", "month", "day")),
+    deadline = forms.DateField(
+        widget=SelectDateWidget(
+            empty_label=("year", "month", "day")),
         required=False
     )
 
@@ -26,8 +27,9 @@ class TaskCreationForm(forms.ModelForm):
         widget=forms.CheckboxSelectMultiple,
         required=False
     )
-    deadline = forms.DateField(widget=SelectDateWidget(
-        empty_label=("year", "month", "day")),
+    deadline = forms.DateField(
+        widget=SelectDateWidget(
+            empty_label=("year", "month", "day")),
         required=False
     )
 
